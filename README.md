@@ -36,8 +36,8 @@ Ensure you have Rust and Cargo installed. Then:
 
 # Clone the repo
 ```bash
-git clone https://github.com/yourusername/ghostpass.git
-cd ghostpass
+git clone https://github.com/yatharth1444/GhostPass.git
+cd GhostPass
 
 # Build the release binary
 cargo build --release
