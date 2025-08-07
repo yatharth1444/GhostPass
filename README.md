@@ -1,5 +1,8 @@
 # GhostPass
 
+> Your ephemeral, encrypted, zero-trace vault in the terminal.  
+> Built with Rust. Trusted by ghosts.
+
 **GhostPass** is a modern, minimalist command-line password manager built in Rust. It offers cutting-edge zero-residency security principles, ensuring your sensitive secrets never linger in memory or disk unencrypted. Designed for privacy, usability, and resilience, GhostPass stands apart from traditional password managers by guaranteeing that *nothing is ever left behind*.
 
 ---
