@@ -1,4 +1,5 @@
-# GhostPass
+# (☁️👻)⎯⎯⎯⎯⎯⎯⎯⎯[ GhostPass ]⎯⎯⎯⎯⎯⎯⎯⎯(🔑🧠)
+
 
 > Your ephemeral, encrypted, zero-trace vault in the terminal.  
 > Built with Rust. Trusted by ghosts.
