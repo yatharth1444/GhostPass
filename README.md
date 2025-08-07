@@ -1,4 +1,4 @@
-# (☁️👻)⎯⎯⎯⎯⎯⎯⎯⎯[ GhostPass ]⎯⎯⎯⎯⎯⎯⎯⎯(🔑🧠)
+# 👾 GhostPass
 
 
 > Your ephemeral, encrypted, zero-trace vault in the terminal.  
