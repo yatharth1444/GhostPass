@@ -5,7 +5,7 @@ use std::{collections::HashMap, fs, path::PathBuf};
 
 pub struct Vault {
     store: HashMap<String, SecretString>,
-    key: Vec<u8>, // symmetric key
+    key: Vec<u8>,
     path: PathBuf,
 }
 
@@ -16,7 +16,7 @@ impl Vault {
             key,
             path,
         };
-        vault.load().ok(); // Ignore load errors on first run
+        vault.load().ok();
         Ok(vault)
     }
 
@@ -28,7 +28,6 @@ impl Vault {
         let decrypted = decrypt(&self.key, &encrypted_data).context("Failed to decrypt vault file")?;
         let serialized = decrypted.expose_secret();
 
-        // Deserialize to HashMap<String, String> then convert to SecretString
         let tmp_store: HashMap<String, String> = serde_json::from_str(serialized)
             .context("Failed to parse vault JSON")?;
         self.store = tmp_store.into_iter()
@@ -38,7 +37,6 @@ impl Vault {
     }
 
     pub fn save(&self) -> Result<()> {
-        // Convert HashMap<String, SecretString> -> HashMap<String, String>
         let tmp_store: HashMap<String, String> = self.store.iter()
             .map(|(k, v)| (k.clone(), v.expose_secret().clone()))
             .collect();
