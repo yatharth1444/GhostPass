@@ -1,0 +1,19 @@
+[package]
+name = "ghostpass"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.3", features = ["derive"] }
+secrecy = "0.8"
+ring = "0.16" # For AES-GCM encryption
+sha2 = "0.10"
+hex = "0.4"
+clipboard = "0.5"
+anyhow = "1.0" # For ergonomic error handling
+tokio = { version = "1.30", features = ["rt-multi-thread", "macros","time"] } # Async runtime for clipboard shadow
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+arrayref = "0.3"
+rpassword = "7.0"
+thiserror = "1.0"
